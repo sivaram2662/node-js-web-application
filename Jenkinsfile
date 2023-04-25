@@ -19,7 +19,7 @@ pipeline {
         }
         stage('npm') {
             steps {
-              sh ' sudo nvm install node  '
+              sh 'source ~/.profile'
             }
         }
     }

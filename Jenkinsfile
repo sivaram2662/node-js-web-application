@@ -22,10 +22,10 @@ pipeline {
               sh '. ~/.nvm/nvm.sh'
             }
         }
-        //  stage('nvm2') {
-        //     steps {
-        //       sh 'nvm install node'
-        //     }
-        // }
+         stage('nvm1') {
+            steps {
+              sh 'nvm install node'
+            }
+        }
     }
 }

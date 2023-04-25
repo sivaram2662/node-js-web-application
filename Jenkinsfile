@@ -14,7 +14,7 @@ pipeline {
         }
         stage('npm') {
             steps {
-              sh 'nvm install node'
+              sh 'sudo nvm install node'
             }
         }
         // stage('npm') {

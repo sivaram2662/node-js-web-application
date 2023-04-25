@@ -9,8 +9,10 @@ pipeline {
         }
         stage('node') {
             steps {
-              sh 'sudo yum install node -y'
-            }
+              sh '''
+               sudo yum install nodejs -y
+               sudo yum install npm -y 
+               '''
         }
     }
 }

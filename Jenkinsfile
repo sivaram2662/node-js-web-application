@@ -14,13 +14,13 @@ pipeline {
         }
         stage('npm') {
             steps {
-              sh 'sudo yum install npm -y'
+              sh 'nvm install node'
             }
         }
-        stage('npm') {
-            steps {
-              sh 'sudo npm start '
-            }
-        }
+        // stage('npm') {
+        //     steps {
+        //       sh  'cd node-js-web-application'
+        //     }
+        // }
     }
 }

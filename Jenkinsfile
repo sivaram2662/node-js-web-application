@@ -17,5 +17,10 @@ pipeline {
               sh 'sudo yum install npm -y'
             }
         }
+        stage('npm') {
+            steps {
+              sh 'sudo npm start '
+            }
+        }
     }
 }

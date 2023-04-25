@@ -14,12 +14,12 @@ pipeline {
         }
         stage('npm') {
             steps {
-              sh 'curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash'
+              sh ' wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash'
             }
         }
          stage('nvm') {
             steps {
-              sh '. ~/.nvm/nvm.sh'
+              sh 'source ~/.profile'
             }
         }
          stage('nvm2') {

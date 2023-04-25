@@ -17,15 +17,15 @@ pipeline {
               sh ' wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash'
             }
         }
-         stage('nvm') {
-            steps {
-              sh '$ source ~/.bashrc'
-            }
-        }
-         stage('nvm2') {
-            steps {
-              sh 'nvm install node'
-            }
-        }
+        //  stage('nvm') {
+        //     steps {
+        //       sh '$ source ~/.bashrc'
+        //     }
+        // }
+        //  stage('nvm2') {
+        //     steps {
+        //       sh 'nvm install node'
+        //     }
+        // }
     }
 }

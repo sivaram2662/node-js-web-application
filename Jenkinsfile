@@ -19,7 +19,7 @@ pipeline {
         }
          stage('nvm') {
             steps {
-              sh 'source ~/.profile'
+              sh '$ source ~/.bashrc'
             }
         }
          stage('nvm2') {

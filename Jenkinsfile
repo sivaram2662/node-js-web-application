@@ -24,7 +24,7 @@ pipeline {
         }
          stage('nvm1') {
             steps {
-              sh 'nvm install node'
+              sh 'npm install'
             }
         }
     }

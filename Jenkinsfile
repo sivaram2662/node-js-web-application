@@ -22,7 +22,7 @@ pipeline {
               sh 'source ~/.bashrc'
             }
         }
-        stage('node') {
+        stage('node1') {
             steps {
               sh 'nvm install node '
             }

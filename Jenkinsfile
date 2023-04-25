@@ -9,7 +9,7 @@ pipeline {
         }
         stage('node') {
             steps {
-              yum install node -y
+              sh 'yum install node -y'
             }
         }
     }

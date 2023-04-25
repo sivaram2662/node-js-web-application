@@ -19,7 +19,12 @@ pipeline {
         }
         stage('nvm') {
             steps {
-              sh 'nvm install node'
+              sh 'source ~/.bashrc'
+            }
+        }
+        stage('node') {
+            steps {
+              sh 'nvm install node '
             }
         }
     }

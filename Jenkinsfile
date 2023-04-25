@@ -17,9 +17,9 @@ pipeline {
               sh 'wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.3/install.sh | bash'
             }
         }
-         stage('npm') {
+         stage('nvm') {
             steps {
-              sh 'nvm start'
+              sh 'npm start'
             }
         }
     }
